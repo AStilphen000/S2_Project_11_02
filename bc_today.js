@@ -1,12 +1,12 @@
-
+"use script" 
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 9
    Case Problem 2
 
    Today at the Union Script
-   Author: 
-   Date:   
+   Author: Angelina Stilphen
+   Date:   2.12.19
    
    This script uses the getEvent() function to return the
    HTML code containin the daily events at the Bridger College
