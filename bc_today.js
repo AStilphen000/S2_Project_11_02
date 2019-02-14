@@ -17,7 +17,7 @@
 // I created a new date function string for the date that I was told to put. Then I created a date string to convert a date and time to a string by using the curent or specified locale. The dateHTML function in the next line of code is so the machine knows where to display the date that we added in the first line of code. Then I created a a thisDay function to add the getDay method that gets the day of the week by using locale time. The next function is the eventHTML that I put another get method into this one was called getEvent to target a specific event. Lastly I applied the ".insertAdjacentHTML" method into the document head function with the ".getElementById" method to target the specific id I wanted.
 var thisDate = new Date("10/12/2018");
 var dateString = thisDate.toLocaleString();
-var dateHTML = "<h2>"+ thisDate +"</h2>";
+var dateHTML = "<h2>"+ dateString +"</h2>";
 var thisDay = thisDate.getDay();
 var eventHTML = getEvent(thisDay);
 
