@@ -1,4 +1,4 @@
-"use script" 
+"use strict" 
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 9
@@ -15,11 +15,20 @@
 */
 
 
+var thisDate = new Date("10/12/2018");
+var dateString = thisDate.toLocaleString();
+var dateHTML = "<h2>"+ thisDate +"</h2>";
+var thisDay = thisDate.getDay();
+var eventHTML = getEvent(thisDay);
 
-function getEvent(day) {
+
+document.getElementById("unionToday").insertAdjacentHTML("beforeend", dateHTML + eventHTML);
+
+
+function getEvent(day) { 
    var eventHTML;
-   switch (day) {
-      case 0: // Sunday Events
+   switch (day) { 
+      case 0: // Sunday Events 
       eventHTML = "<dl> \
          <dt>Highlights from the Bridger Art Collection</dt> \
          <dd><p>An exhibition from over 60 items in the BC permanent collection.</p> \
